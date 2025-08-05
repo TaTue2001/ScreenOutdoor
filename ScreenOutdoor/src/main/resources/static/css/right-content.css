@@ -1,0 +1,71 @@
+.right-content {
+    flex: 1;
+    background-color: #ffffff;
+    display: flex;
+    flex-wrap: wrap; /* Cho phép các thẻ nằm cạnh nhau */
+    height: 100%;
+    box-sizing: border-box;
+  }
+  
+.right-title{
+  display: flex;
+  background-color: rgb(34, 72, 241);;
+  height: 70px;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  color: #ffff;
+  border: 2px solid #000;
+}
+
+
+  .staff-info {
+    height: 83vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Căn giữa thông tin */
+    justify-content: center;
+
+  }
+  
+  .staff-card {
+    height: 50%; /* Chiều cao bằng 50% của phần tử cha */
+    width: 99.5%;
+    background-color: #ffff;
+    display: flex;  
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+    border: 2px solid #000; 
+  }
+  
+  
+  .staff-avatar {
+  width:330px; /* Để ảnh chiếm toàn bộ chiều rộng của thẻ */
+  height: 330px; /* Chiều cao tự động để giữ tỷ lệ */
+  border-radius: 10px;
+  border: 2px solid #0d6efd;
+  object-fit: cover;
+  }
+  
+
+  
+  .staff-name {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 60px;
+    color: #0d6efd;
+  }
+  
+  .staff-sdt {
+    margin-top: 2px;
+    font-size: 30px; /* Kích thước cho số điện thoại */
+    font-weight: bold;
+  }
+  
+  .staff-title {
+    font-size: 40px;
+    color: #555;
+    font-weight: bold;
+  }

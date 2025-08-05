@@ -1,0 +1,141 @@
+/* Reset margin và padding cho body và html */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto'; /* Sử dụng Roboto cho toàn bộ trang */
+  height: 100%;
+  overflow: hidden;
+  color: #333; /* Màu chữ chính */
+}
+
+.main-content {
+  display: flex;
+  height: calc(100vh - 65px); /* Tùy chỉnh nếu có tabbar */
+  overflow: hidden;
+}
+
+.left-container {
+  flex: 4; 
+  background-color: #ffff; /* Màu nền xanh nhẹ */
+  overflow-y: hidden;
+  height: 100%;
+}
+
+#right-container {
+  flex: 1.8; /* 1/3 */
+  background-color: #ffff; /* Màu nền xanh nhạt hơn */
+  overflow-y: hidden;
+  height: 100%;
+}
+
+.content-wrapper {
+  display: flex; /* Sử dụng Flexbox để bố trí hai phần */
+  justify-content: space-between; /* Tạo khoảng cách giữa hai phần */
+}
+
+
+.tabbar {
+  background: #ffff; 
+  color: rgba(17, 13, 13, 0.733);
+  display: flex;
+  padding: 2px 20px;
+  justify-content: space-between;
+  position: relative;
+  height: 80px;
+}
+
+.tabbar-left {
+  display: flex;
+}
+
+.logo-icon {
+  height: 60px; 
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.hospital-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.hospital-name {
+  font-weight: bold;
+  font-size: 25px;
+  color: #04a84e;
+}
+
+.hospital-slogan {
+  font-size: 20px;
+  font-style: italic;
+  color: #ff0808;
+}
+
+.tabbar-center {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+#appbar-phong-name {
+  margin: 0;
+  font-size: 3.5em;
+  color: #ff0808;
+}
+
+.tabbar-right {
+  padding-top: 2%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  gap: 15px; /* Tạo khoảng cách giữa các thành phần */
+}
+
+.menu-icon {
+  cursor: pointer;
+  margin-left: 15px;
+  font-size: 30px;
+  width: 50px;
+  height: 50px;
+}
+
+.menu-icon img {
+  width: 50px;
+  height: 50px;
+}
+
+.menu-dropdown {
+  display: none;
+  position: absolute;
+  top: 40px;
+  right: 0;
+  background: white;
+  color: black;
+  border: 1px solid #ddd;
+  z-index: 100;
+  padding: 10px;
+  width: 200px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.menu-dropdown a,
+.menu-dropdown label {
+  display: block;
+  margin-top: 10px;
+  color: black;
+  text-decoration: none;
+}
+
+.menu-dropdown a:hover {
+  background-color: #eee;
+} 
+
+.time-display {
+  font-size: 25px;
+  white-space: nowrap;
+  color: rgb(14, 13, 13); /* Màu trắng cho giờ hiển thị */
+}

@@ -1,0 +1,3 @@
+2025-07-22T08:59:47.454+07:00  INFO 17608 --- [ScreenOutdoor] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-07-22T08:59:47.476+07:00  INFO 17608 --- [ScreenOutdoor] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-07-22T08:59:47.482+07:00  INFO 17608 --- [ScreenOutdoor] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

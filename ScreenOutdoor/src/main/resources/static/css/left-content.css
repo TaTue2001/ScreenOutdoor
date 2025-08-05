@@ -1,0 +1,128 @@
+.layout-container {
+    display: grid; 
+    box-sizing: border-box;
+
+}
+
+
+.bed-cards-container{
+height: 100vh;
+}
+
+.left-title{
+  display: flex;
+  background-color: rgb(34, 72, 241);
+  height: 70px;
+  align-items: center;
+  font-size: 40px;
+  border: 2px solid #000;
+  color: #fff;
+}
+
+
+.bed-title{
+    height: 100%;
+    display: flex;
+    width: 20%;
+    justify-content: center;
+    border-right: 2px solid #000;
+    align-items: center;
+}
+
+.patient-info{
+    display:flex ;
+    align-items: center;
+    flex-direction:  column;
+}
+
+.patient-title{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    height: 100%;
+    align-items: center ;
+}
+
+
+.bed-card {
+    background-color: #ffff; /* Màu nền sáng hơn */
+    border: 2px solid #000  ; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Đổ bóng */
+    display: flex;
+    flex-direction: row; /* Để các phần tử xếp chồng lên nhau */
+    transition: transform 0.3s; /* Hiệu ứng chuyển động */
+    height: 100%; 
+}
+
+.bed-name-container {
+    background-color: #ffff; /* Màu xanh chủ đạo */
+    text-align: center; /* Canh giữa nội dung */
+    flex: 0 0 auto; /* Không cho phần tử này co lại */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 2px solid #000 ;
+    width: 20%;
+}
+
+.bed-name {
+    font-weight: bold;
+    font-size: 3em; /* Kích thước chữ nổi bật */
+    color: rgb(4, 44, 223); /* Màu chữ trắng */
+}
+
+.patient-info {
+    display:flex ;
+    flex-direction: column;
+    margin: 5px;
+    margin-left: 30px;
+    flex: 1;
+    font-size: 1.1em; /* Kích thước chữ */
+    justify-content: center;
+    align-items: center;
+}
+
+.patient-name-gender {
+    display: flex; /* Sử dụng flexbox */
+    justify-content: space-between; /* Căn giữa giữa tên và giới tính */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    width: 100%;
+}
+
+.patient-name {
+    font-size: 3em; /* Kích thước cho tên bệnh nhân */
+    margin-bottom: 2px;
+    font-weight: bold;
+    color: #0f36e6; /* Màu xanh cho tên bệnh nhân */
+}
+
+.gender p {
+    margin: 0; /* Loại bỏ margin mặc định */
+    font-size: 2.0em; /* Kích thước chữ cho giới tính */
+}
+
+.birth-ngaynhapvien {
+    display: flex; /* Sử dụng flexbox cho ngày sinh và ngày nhập viện */
+    justify-content: space-between; /* Căn giữa giữa ngày sinh và ngày nhập viện */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    margin-top: 5px; /* Khoảng cách giữa hai dòng */
+    width: 100%;
+}
+
+.birth-ngaynhapvien p,
+.ngaynhapvien {
+    margin: 0; /* Loại bỏ margin mặc định */
+    font-size: 2.0em; /* Kích thước chữ */
+}
+
+.gender-icon {
+    width: 16px; 
+    height: 32px;
+    vertical-align: middle; 
+    margin-right: 5px; 
+}
+
+.address {
+    word-wrap: break-word; /* Ngắt dòng tự động khi địa chỉ quá dài */
+    margin-top: 5px; /* Khoảng cách trên */
+}

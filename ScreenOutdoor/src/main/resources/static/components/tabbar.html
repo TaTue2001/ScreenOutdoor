@@ -1,0 +1,31 @@
+<div class="tabbar">
+    <div class="tabbar-left">
+      
+      <img src="assets/images/logo-icon.png" alt="Logo" class="logo-icon" />
+      <div class="hospital-info">
+        <div class="hospital-name">Bệnh viện đa khoa Việt Đức</div>
+        <div class="hospital-slogan">Chuyên sâu - Chuyên tâm - Chuyên nghiệp</div>
+      </div>
+    </div>
+    <div class="tabbar-center">
+        <h2 id="appbar-phong-name">Chưa chọn phòng</h2>
+    </div>
+
+    <div class="tabbar-right">
+        <div id="current-time" class="time-display"></div>
+      <span class="menu-icon" onclick="toggleMenu()">
+        <img src="assets/images/menu-icon.png" alt="Menu" class="icon-img" />
+      </span>
+      <div class="menu-dropdown" id="menu-options">
+        <label for="phong-select" class="menu-label">Chọn phòng:</label>
+          <select id="phong-select" size="10" onchange="fetchRoom(this.value)">
+            <option value="">-- chọn phòng --</option>
+          </select>
+        <a href="#" onclick="showCauHinhPhong()">Cấu hình phòng</a>
+        <a href="#" onclick="showCauHinhLayout()">Cấu hình hiển thị</a>
+      </div>
+    </div>
+    <script src="config.js"></script>
+    <script src="app.js"></script>
+</div>
+  
